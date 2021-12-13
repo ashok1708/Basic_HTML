@@ -43,7 +43,7 @@
     <div class="NavIcon">
         <a href=""><img class="navBtn" src="assets/images/search-icon.png" alt="Search icon missing"></a>
         <a href=""><img class="navBtn" src="assets/images/user-icon.png" alt="User icon missing"></a>
-        <a href=""><img class="navBtn" src="assets/images/cart-icon.png" alt="User icon missing"></a>
+        <a href=""><img class="navBtn" src="assets/images/cart-icon-main.png" alt="User icon missing"></a>
     </div>
 
     <div class="btnCheckout">
