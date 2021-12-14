@@ -27,29 +27,34 @@
 <div class="MainNav">
     <p class="MNav">FREE DELIVERY & RETURNS MAINLAND UK</p>
 </div>
-
-<div class="Menu">
-
-    <div class="logo">
+<div class="main-menu">
+    <div class="logo" onclick="location.href='index.php';" style="cursor: pointer;">
         <img src="assets/images/logo.png">
     </div>
+    <div class="Menu">
 
-    <div class="TopNav" id="tpNav">
-        <a href="bathroomtiles.php">TILES</a>
-        <a href="#adhesives&grouts">ADHESIVES & GROUTS</a>
-        <a href="#tools">TOOLS & ACCESSORIES</a>
+
+        <nav id="hamnav">
+            <!-- (B) THE HAMBURGER -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <div class="TopNav" id="tpNav">
+                <a href="bathroomtiles.php">TILES</a>
+                <a href="#adhesives&grouts">ADHESIVES & GROUTS</a>
+                <a href="#tools">TOOLS & ACCESSORIES</a>
+            </div>
+        </nav>
+        <div class="NavIcon">
+            <a href=""><img class="navBtn" src="assets/images/search-icon.png" alt="Search icon missing"></a>
+            <a href=""><img class="navBtn" src="assets/images/user-icon.png" alt="User icon missing"></a>
+            <a href=""><img class="navBtn" src="assets/images/cart-icon-main.png" alt="User icon missing"></a>
+        </div>
+
+        <div class="btnCheckout">
+            <a class="btnCheck" href="#">CHECKOUT</a>
+        </div>
+
     </div>
-
-    <div class="NavIcon">
-        <a href=""><img class="navBtn" src="assets/images/search-icon.png" alt="Search icon missing"></a>
-        <a href=""><img class="navBtn" src="assets/images/user-icon.png" alt="User icon missing"></a>
-        <a href=""><img class="navBtn" src="assets/images/cart-icon-main.png" alt="User icon missing"></a>
-    </div>
-
-    <div class="btnCheckout">
-        <a class="btnCheck" href="#">CHECKOUT</a>
-    </div>
-
 </div>
 </body>
 </html>

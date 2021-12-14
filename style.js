@@ -38,4 +38,30 @@ $(document).ready(function(){
         $("#"+tab_id).addClass('current');
     })
 
-})
+
+
+});
+
+function hideAreaDiv() {
+    var x = document.getElementById("AreaDiv");
+    var y = document.getElementById("AreaDiv2");
+
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    if(y.style.display === "block"){
+        y.style.display="none";
+        document.getElementById("addArea").style.display="block";
+    }
+}
+
+function  showAnotherArea() {
+    var x=document.getElementById("AreaDiv2");
+    if (x.style.display==="none"){
+        x.style.display= "block";
+    }
+    document.getElementById("addArea").style.display="none";
+
+}

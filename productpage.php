@@ -59,24 +59,53 @@
             <p class="solidFooter"></p>
             <div class="area-header">
                 <p class="area-heading">Calculate your Area Size</p>
-                <img src="assets/images/mins-circle.png">
+                <img src="assets/images/mins-circle.png" onclick="hideAreaDiv()" style="cursor: pointer;">
             </div>
-            <form class="form_top" name="calculator" oninput="area.value=parseInt(height.value)*parseInt(width.value)">
-                <span class="area-tag">Height</span><input class="areabox" type="number" name="height" id="height">
-                <span class="area-tag" style="margin-left: 10px">Width</span><input class="areabox" type="number" name="width" id="width" onkeyup="areaCal()">
 
-                <select class="sel_box" onchange="areaConv(this.value)">
-                    <option id="meters" value="meter">Meters</option>
-                    <option id="inches" value="inch">Inches</option>
-                </select>
-                <span class="eq-sign">=</span>
-                <output name="area" class="area-value" for="hw"></output>
-                <span class="area-unit" id="unit">m<sup>2</sup></span>
-            </form>
-            <div class="add-area">
-                <span>Add Another Area</span>
-                <i class="fas fa-plus-circle"></i>
+            <div id="AreaDiv">
+                <form class="form_top" name="calculator"
+                      oninput="area.value=parseInt(height.value)*parseInt(width.value)">
+                    <span class="area-tag">Height</span><input class="areabox" type="number" name="height" id="height">
+                    <span class="area-tag" style="margin-left: 10px">Width</span><input class="areabox" type="number"
+                                                                                        name="width" id="width"
+                                                                                        onkeyup="areaCal()">
+
+                    <select class="sel_box" onchange="areaConv(this.value)">
+                        <option id="meters" value="meter">Meters</option>
+                        <option id="inches" value="inch">Inches</option>
+                    </select>
+                    <span class="eq-sign">=</span>
+                    <output name="area" class="area-value" for="hw"></output>
+                    <span class="area-unit" id="unit">m<sup>2</sup></span>
+                </form>
+                <div class="add-area" id="addArea" onclick="showAnotherArea()" style="cursor: pointer">
+                    <span>Add Another Area</span>
+                    <i class="fas fa-plus-circle"></i>
+                </div>
             </div>
+
+            <div id="AreaDiv2" style="display: none">
+                <form class="form_top" name="calculator"
+                      oninput="area.value=parseInt(height.value)*parseInt(width.value)">
+                    <span class="area-tag">Height</span><input class="areabox" type="number" name="height" id="height">
+                    <span class="area-tag" style="margin-left: 10px">Width</span><input class="areabox" type="number"
+                                                                                        name="width" id="width"
+                                                                                        onkeyup="areaCal()">
+
+                    <select class="sel_box" onchange="areaConv(this.value)">
+                        <option id="meters" value="meter">Meters</option>
+                        <option id="inches" value="inch">Inches</option>
+                    </select>
+                    <span class="eq-sign">=</span>
+                    <output name="area" class="area-value" for="hw"></output>
+                    <span class="area-unit" id="unit">m<sup>2</sup></span>
+                </form>
+                <div class="add-area" onclick="()" style="cursor: pointer">
+                    <span>Add Another Area</span>
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+            </div>
+
             <p class="solidFooter"></p>
 
 
@@ -94,13 +123,13 @@
             <span class="inc">inc </span>
             <span class="vat"> VAT</span>
         </div>
-        <div class="cart-button">
+        <div class="cart-button" onclick="location.href='#';" style="cursor: pointer;">
             <div class="button-div-cart">
                 <img src="assets/images/cart-icon.png">
                 <a href="#" class="button-product">ADD TO BASKET</a>
             </div>
         </div>
-        <div class="sample-button">
+        <div class="sample-button" onclick="location.href='#';" style="cursor: pointer;">
             <div class="button-div-cart">
                 <img src="assets/images/sample-icon.jpg">
                 <a href="#" class="button-product">ADD FREE SAMPLE</a>
@@ -226,6 +255,10 @@
     </div>
 </div>
 
-<!---->
-<?php //include 'footer.php'; ?>
+
+<?php include 'footer.php'; ?>
+
+<script>
+
+</script>
 
